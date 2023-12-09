@@ -1,7 +1,5 @@
 import Solution, { SolutionSolverType } from "../../solution";
 
-const name = "Day 1: Trebuchet?!";
-
 const solver: SolutionSolverType = (input) => {
   const lines = input.split(`\r\n`);
   const numbersOnly = lines.map((line) => {
@@ -28,4 +26,4 @@ const solver: SolutionSolverType = (input) => {
   return sumOfDigits.toString();
 };
 
-export default new Solution(1, name, solver);
+export default new Solution(1, "Day 1: Trebuchet?!", solver);
